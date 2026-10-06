@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para ti ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, #ffdde5 0, transparent 30%),
+        radial-gradient(circle at 80% 80%, #ffc2d1 0, transparent 30%),
+        linear-gradient(135deg,#fff5f7,#ffe4ea);
+    color:#522633;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+.container{
+    width:100%;
+    max-width:650px;
+    position:relative;
+}
+
+.card{
+    background:rgba(255,255,255,.94);
+    border:1px solid #f0ccd5;
+    border-radius:30px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 18px 55px rgba(116,27,54,.14);
+    position:relative;
+    overflow:hidden;
+}
+
+h1,h2{
+    font-family:Georgia,serif;
+    color:#9b2948;
+}
+
+h1{
+    font-size:clamp(32px,8vw,52px);
+    margin:10px 0 15px;
+}
+
+h2{
+    font-size:28px;
+}
+
+p{
+    font-size:17px;
+    line-height:1.75;
+}
+
+.heart{
+    font-size:65px;
+    display:inline-block;
+    animation:beat 1.3s infinite;
+}
+
+button{
+    border:none;
+    background:linear-gradient(135deg,#a5284a,#d9476c);
+    color:white;
+    border-radius:50px;
+    padding:14px 24px;
+    min-height:50px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:8px 4px;
+    box-shadow:0 7px 20px rgba(150,38,68,.20);
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-2px) scale(1.02);
+}
+
+.screen{
+    display:none;
+    animation:appear .6s ease;
+}
+
+.letter{
+    text-align:left;
+    background:#fff;
+    border:1px solid #f1d8df;
+    padding:23px;
+    border-radius:22px;
+    margin-top:15px;
+}
+
+.center{
+    text-align:center;
+}
+
+.secret{
+    background:#fff2f5;
+    border:1px dashed #d697a7;
+    padding:18px;
+    border-radius:18px;
+    margin:18px 0;
+    text-align:center;
+}
+
+.small{
+    color:#8b6871;
+    font-size:14px;
+}
+
+.final-title{
+    font-family:Georgia,serif;
+    font-size:clamp(31px,8vw,50px);
+    color:#9b2948;
+    font-weight:bold;
+}
+
+.float{
+    position:fixed;
+    bottom:-50px;
+    font-size:25px;
+    pointer-events:none;
+    animation:rise linear forwards;
+    opacity:.65;
+}
+
+@keyframes beat{
+    50%{transform:scale(1.16);}
+}
+
+@keyframes appear{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes rise{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:.7;
+    }
+    to{
+        transform:translateY(-110vh) rotate(30deg);
+        opacity:0;
+    }
+}
+
+@media(max-width:500px){
+    body{padding:12px;}
+    .card{
+        padding:28px 16px;
+        border-radius:24px;
+    }
+    p{font-size:16px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<div class="card">
+
+<!-- PORTADA -->
+
+<div id="home">
+
+    <div class="heart">❤️</div>
+
+    <h1>Para: Sabrina Oliva</h1>
+
+    <p>
+        Hice algo especialmente para ti…
+    </p>
+
+    <p>
+        Pero tienes que prometerme una cosa:
+        <br>
+        <strong>llegar hasta el final. 😏❤️</strong>
+    </p>
+
+    <button onclick="show('one')">
+        Abrir mi sorpresa 💌
+    </button>
+
+    <p class="small">
+        Toca el botón, mi amor.
+    </p>
+
+</div>
+
+
+<!-- PARTE 1 -->
+
+<div id="one" class="screen">
+
+<div class="letter">
+
+<h2 class="center">Mi novia hermosa ❤️</h2>
+
+<p>
+Quería hacerte algo diferente. No solamente mandarte
+un mensaje diciéndote cuánto te quiero, sino darte
+un pequeño detalle que fueras descubriendo poco a poco.
+</p>
+
+<p>
+Me encanta tenerte en mi vida, compartir contigo,
+hacerte reír, abrazarte, besarte y disfrutar hasta
+esos momentos sencillos que contigo terminan siendo
+especiales.
+</p>
+
+<p>
+Hay muchas cosas que me gustan de ti: tu sonrisa,
+tu forma de ser, tus ocurrencias y esa manera tan
+tuya de hacer que quiera estar cerquita de ti.
+</p>
+
+<p class="center">
+<strong>
+Y esto apenas comienza… ❤️
+</strong>
+</p>
+
+<div class="center">
+
+<button onclick="show('two')">
+Continúa, mi amor ❤️
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PARTE 2 -->
+
+<div id="two" class="screen">
+
+<div class="letter">
+
+<h2 class="center">
+Mi mamacita hermosa 😘
+</h2>
+
+<p>
+Ahora sí tengo que confesarte algo…
+</p>
+
+<p>
+Me encanta tu lado tierno, pero también tienes
+ese otro lado que hace que a veces se me olvide
+por completo cómo portarme bien. 😏
+</p>
+
+<p>
+Y tú sabes perfectamente de qué estoy hablando…
+</p>
+
+<div class="secret">
+
+Hay besos tuyos que empiezan muy inocentes…
+
+<br><br>
+
+<strong>
+y terminan dejándome con pensamientos que
+mejor te cuento cuando estemos solitos. 😏❤️
+</strong>
+
+</div>
+
+<p class="center">
+Y no pongas esa carita…
+<br>
+<strong>que tú también tienes la culpa. 😏</strong>
+</p>
+
+<div class="center">
+
+<button onclick="show('three')">
+A ver qué sigue… 👀
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PREGUNTA -->
+
+<div id="three" class="screen">
+
+<div class="letter">
+
+<h2 class="center">
+Tengo una pregunta para ti 😏
+</h2>
+
+<p class="center">
+
+<strong>
+¿Qué crees que es lo que más me gusta de ti?
+</strong>
+
+</p>
+
+<div class="center">
+
+<button onclick="answer()">
+Tu sonrisa 🥰
+</button>
+
+<button onclick="answer()">
+Tus besos 😘
+</button>
+
+<button onclick="answer()">
+Todo tú 😏❤️
+</button>
+
+</div>
+
+<div id="answer" class="secret" style="display:none;">
+
+<strong>
+Era una pregunta trampa. 😂❤️
+</strong>
+
+<br><br>
+
+¿Cómo voy a escoger solamente una cosa?
+
+<br><br>
+
+Me gusta tu sonrisa, tus abrazos,
+tu forma de ser, tus besos…
+
+<br><br>
+
+y bueno…
+
+<br>
+
+<strong>
+hay otras cositas de ti que también me encantan,
+pero esas mejor las dejamos entre tú y yo. 😏🔥
+</strong>
+
+<br><br>
+
+<button onclick="show('four')">
+Continuar ❤️
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PARTE ROMÁNTICA -->
+
+<div id="four" class="screen">
+
+<div class="letter">
+
+<h2 class="center">
+Ahora sí, fuera de bromas… ❤️
+</h2>
+
+<p>
+Detrás de toda la picardía, de nuestras bromas
+y de esos momentos que solamente nosotros
+entendemos, hay algo mucho más importante.
+</p>
+
+<p>
+<strong>Me haces feliz.</strong>
+</p>
+
+<p>
+Me gusta saber que eres mi novia.
+Me gusta compartir mi tiempo contigo y pensar
+en todos los recuerdos que todavía nos faltan
+por crear.
+</p>
+
+<p>
+Quiero seguir robándote sonrisas, darte abrazos,
+llenarte de besos, molestarte un poquito y
+recordarte siempre lo hermosa que eres para mí.
+</p>
+
+<p>
+Y claro…
+</p>
+
+<p>
+también seguir llamándote
+<strong>mi mamacita hermosa</strong>
+cuando se me olvide comportarme. 😏❤️
+</p>
+
+<div class="center">
+
+<button onclick="show('five')">
+Tengo otra confesión… 😘
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- PICARDÍA -->
+
+<div id="five" class="screen">
+
+<div class="letter">
+
+<h2 class="center">
+Entre tú y yo… 😏
+</h2>
+
+<p>
+Hay algo peligroso en ti.
+</p>
+
+<p>
+Puedes estar completamente tranquila,
+sonreírme como si nada…
+</p>
+
+<p>
+y de repente acercarte un poquito,
+mirarme de cierta manera…
+</p>
+
+<div class="secret">
+
+<strong>
+y ahí es cuando mi lado romántico
+empieza a tener pensamientos
+no tan románticos. 😏🔥
+</strong>
+
+</div>
+
+<p class="center">
+
+Pero tranquila…
+
+<br><br>
+
+<strong>
+esa parte de la historia no se escribe aquí. 😘
+</strong>
+
+</p>
+
+<div class="center">
+
+<button onclick="show('six')">
+Ya me dio curiosidad 👀❤️
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- ÚLTIMO MENSAJE -->
+
+<div id="six" class="screen">
+
+<div class="letter">
+
+<h2 class="center">
+Una última cosa… 💌
+</h2>
+
+<p>
+No sé exactamente cuántos momentos nos esperan,
+pero sí sé que quiero muchos de ellos contigo.
+</p>
+
+<p>
+Quiero los días bonitos, las risas inesperadas,
+los abrazos largos, los besos que duran un poquito
+más de lo planeado…
+</p>
+
+<p>
+las conversaciones, las aventuras y hasta esos
+momentos en los que no hace falta decir nada.
+</p>
+
+<p class="center">
+
+<strong>
+Porque cuando estoy contigo,
+el lugar pasa a ser lo de menos. ❤️
+</strong>
+
+</p>
+
+<div class="center">
+
+<button onclick="finalPage()">
+Descubre el final ❤️
+</button>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- FINAL -->
+
+<div id="final" class="screen">
+
+<div class="heart">❤️</div>
+
+<div class="final-title">
+Mi lugar favorito es contigo.
+</div>
+
+<p>
+Mi novia hermosa, mi mamacita hermosa…
+</p>
+
+<p>
+Gracias por tus sonrisas, tus abrazos,
+tus besos y por todos esos pequeños momentos
+que hacen que estar contigo sea tan especial.
+</p>
+
+<div class="secret">
+
+<strong>
+Quiero muchos momentos más contigo.
+</strong>
+
+<br><br>
+
+De los románticos… ❤️
+
+<br>
+
+de los divertidos… 🥰
+
+<br>
+
+de los que terminan en muchos besos… 😘
+
+<br><br>
+
+y también…
+
+<br>
+
+<strong>
+de esos que empiezan con una mirada
+y que no podemos contar por aquí. 😏🔥
+</strong>
+
+<br><br>
+
+<strong style="font-size:23px;">
+Te amo muchísimo. ❤️
+</strong>
+
+</div>
+
+<div style="font-size:38px;margin-top:20px;">
+🌹 ❤️ 😘 ❤️ 🌹
+</div>
+
+<p style="font-family:Georgia,serif;font-size:21px;">
+<strong>
+Siempre tú. ❤️
+</strong>
+</p>
+
+</div>
+
+</div>
+</div>
+
+
+<script>
+
+const screens = [
+"one",
+"two",
+"three",
+"four",
+"five",
+"six",
+"final"
+];
+
+function show(id){
+
+    document.getElementById("home").style.display="none";
+
+    screens.forEach(screen=>{
+        document.getElementById(screen).style.display="none";
+    });
+
+    document.getElementById(id).style.display="block";
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+}
+
+function answer(){
+
+    document.getElementById("answer").style.display="block";
+
+}
+
+function finalPage(){
+
+    show("final");
+
+    createHearts();
+
+}
+
+function createHearts(){
+
+    let count=0;
+
+    const interval=setInterval(()=>{
+
+        if(count>=35){
+            clearInterval(interval);
+            return;
+        }
+
+        const heart=document.createElement("div");
+
+        heart.className="float";
+
+        const hearts=["❤️","💕","💗","🌹","😘"];
+
+        heart.innerText=
+        hearts[Math.floor(Math.random()*hearts.length)];
+
+        heart.style.left=
+        Math.random()*95+"%";
+
+        heart.style.animationDuration=
+        (4+Math.random()*3)+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },7500);
+
+        count++;
+
+    },120);
+
+}
+
+</script>
+
+</body>
+</html>
